@@ -1,0 +1,22 @@
+body {
+    background: gainsboro;
+}
+
+.flex {
+    display: flex;
+}
+
+.product-title {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+
+.product-image {
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: red solid 1px;
+}
