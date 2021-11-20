@@ -1,6 +1,21 @@
 /*За допомогою циклу вивести всю інформацію про пости використовуючи шаблон Template 1.1.
 			* ЗА допомоги стилів побудувати структуру "сітки" по 5 обєктів в лінію
 			* */
+<!--template 1.1-->
+// <div class="wrap">
+//     <div class="post-card">
+//         <h3>ID - TITLE</h3>
+//         <p>BODY</p>
+//     </div>
+//
+//     <!--
+//     ...
+//     ...
+//     ...
+//     other posts
+//     -->
+//
+// </div>
 let users = [
     {
         userId: 1,
@@ -603,26 +618,12 @@ let users = [
         body: 'cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut'
     }
 ];
-<!--template 1.1-->
-// <div class="wrap">
-//     <div class="post-card">
-//         <h3>ID - TITLE</h3>
-//         <p>BODY</p>
-//     </div>
-//
-//     <!--
-//     ...
-//     ...
-//     ...
-//     other posts
-//     -->
-//
-// </div>
-document.write(`<div class="wrap">`);
-for (const user of users) {
-    document.write(`<div class="post-card">`);
-    document.write(`<h3>${user.id} - ${user.title}</h3>`);
-    document.write(`<p>${user.body}</p>`);
-    document.write(`</div>`);
-}
-document.write(`</div>`);
+
+// document.write(`<div class="wrap">`);
+// for (const user of users) {
+//     document.write(`<div class="post-card">`);
+//     document.write(`<h3>${user.id} - ${user.title}</h3>`);
+//     document.write(`<p>${user.body}</p>`);
+//     document.write(`</div>`);
+// }
+// document.write(`</div>`);
