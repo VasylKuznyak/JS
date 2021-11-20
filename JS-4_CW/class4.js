@@ -116,14 +116,14 @@
 // console.log(randomArray(20, 40));
 
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
-function array(arrayOld) {
-    let arrayNew = [];
-    for (let i = arrayOld.length - 1, k = 0; i >= 0; k++, i--) {
-        arrayNew[k] = arrayOld[i];
-
-    }
-    return arrayNew;
-}
-
-console.log(array([10, 20, 30, 40, 50,]));
+// function array(arrayOld) {
+//     let arrayNew = [];
+//     for (let i = arrayOld.length - 1, k = 0; i >= 0; k++, i--) {
+//         arrayNew[k] = arrayOld[i];
+//
+//     }
+//     return arrayNew;
+// }
+//
+// console.log(array([10, 20, 30, 40, 50,]));
 
