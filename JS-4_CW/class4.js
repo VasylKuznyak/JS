@@ -35,6 +35,7 @@
 //     return numMax;
 // }
 //
+//
 // console.log(arrayNum(arrayNums = [426, 253, 584, 423, 532, 2102]));
 
 // - створити функцію яка повертає найменше число з масиву
@@ -51,7 +52,6 @@
 // console.log(arrayNum(arrayNums = [426, 253, 584, 423, 532, 2102]));
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
-
 // function arraySum(nums) {
 //     let sum = 0;
 //     for (const numElement of nums) {
@@ -73,7 +73,7 @@
 //
 // console.log(middleNum(nums = [10, 46, 50, 79, 64, 46]));
 
-// - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
+// - створити функцію яка приймає будь-яку кількість чисел, повертає найменше, а виводить найбільше (Math використовувати заборонено);
 // function anyNumbers() {
 //     let numberReturnMin = numbers[0];
 //     let numberReturnMax = numbers[0];
@@ -116,4 +116,14 @@
 // console.log(randomArray(20, 40));
 
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+function array(arrayOld) {
+    let arrayNew = [];
+    for (let i = arrayOld.length - 1, k = 0; i >= 0; k++, i--) {
+        arrayNew[k] = arrayOld[i];
+
+    }
+    return arrayNew;
+}
+
+console.log(array([10, 20, 30, 40, 50,]));
 

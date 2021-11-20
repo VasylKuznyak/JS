@@ -6,6 +6,7 @@
 // let res = rectangle(20, 40);
 // console.log(res);
 
+
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
 // function circle(r, p) {
 //     return (p * r * r);
