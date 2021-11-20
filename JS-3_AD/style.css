@@ -1,0 +1,19 @@
+.body {
+    margin: 0;
+}
+.wrap {
+    background-color: palegoldenrod;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.post-card {
+    width: 15%;
+}
+.post-card h3{
+    color: darkgreen;
+}
+.post-card p{
+    color: darkolivegreen;
+}
