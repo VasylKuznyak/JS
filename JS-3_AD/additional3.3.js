@@ -61,9 +61,13 @@
 // }
 
 // 5. Вивести кожен елемент масиву, сусід справа якого є парним
-// EXAMPLE: [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ] -> Має бути виведено 1, 9, 56              ?????????????????????????????????
+// EXAMPLE: [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ] -> Має бути виведено 1, 9, 56
 // let neighborPairArray = [1, 2, 3, 5, 7, 9, 56, 8, 67];
-// ********
+// for (let i = 0; i < neighborPairArray.length; i++) {
+//     if (neighborPairArray[i + 1] % 2 === 0) {
+//         console.log(neighborPairArray[i]);
+//     }
+// }
 
 // 6. Є масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. Обрахувати середній чек.
 // let receiptArray = [100, 250, 50, 168, 120, 345, 188];
@@ -99,12 +103,12 @@
 
 // - Дано 2 масиви з рівною кількістю обєктів.                                      ????????????????????????????????????
 // Масиви:
-//     let usersWithId = [
-//         {id: 1, name: 'vasya', age: 31, status: false},
-//         {id: 2, name: 'petya', age: 30, status: true},
-//         {id: 3, name: 'kolya', age: 29, status: true},
-//         {id: 4, name: 'olya', age: 28, status: false}
-//     ];
+// let usersWithId = [
+//     {id: 1, name: 'vasya', age: 31, status: false},
+//     {id: 2, name: 'petya', age: 30, status: true},
+//     {id: 3, name: 'kolya', age: 29, status: true},
+//     {id: 4, name: 'olya', age: 28, status: false}
+// ];
 //
 // let citiesWithId = [
 //     {user_id: 3, country: 'USA', city: 'Portland'},
@@ -112,7 +116,7 @@
 //     {user_id: 2, country: 'Poland', city: 'Krakow'},
 //     {user_id: 4, country: 'USA', city: 'Miami'}
 // ];
-//
+
 // Зєднати в один обєкт користувача та місто з відповідними "id" та "user_id" .
 //     Записати цей обєкт в новий масив
 // Example:
