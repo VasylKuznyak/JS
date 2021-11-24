@@ -109,26 +109,23 @@ let usersWithId = [
     {id: 3, name: 'kolya', age: 29, status: true},
     {id: 4, name: 'olya', age: 28, status: false}
 ];
-for (const usersWithIdElement of usersWithId) {
 
-}
 let citiesWithId = [
     {user_id: 3, country: 'USA', city: 'Portland'},
     {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
     {user_id: 2, country: 'Poland', city: 'Krakow'},
     {user_id: 4, country: 'USA', city: 'Miami'}
 ];
-
-
-let allUsersInfo = [];
-for (const userWithId of usersWithId) {
-    for (const cityWithId of citiesWithId) {
-        if (usersWithId.id === cityWithId.user_id) {
-
+let allInformationAboutUser;
+for (let usersWithIdElement of usersWithId) {
+    for (let citiesWithIdElement of citiesWithId) {
+        if (usersWithId.id === citiesWithIdElement.user_id) {
+            usersWithIdElement.address = citiesWithIdElement;
         }
+        allInformationAboutUser = usersWithId.concat(citiesWithIdElement);
+        console.log(allInformationAboutUser);
     }
 }
-
 
 // Зєднати в один обєкт користувача та місто з відповідними "id" та "user_id" .
 //     Записати цей обєкт в новий масив

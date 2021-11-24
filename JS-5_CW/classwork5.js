@@ -119,10 +119,12 @@
 
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 // let numbersArray = [1, 2, 3];
+// let numbersArrayNew = [];
 // let numsReverseArray = (array) => {
 //     for (let i = 0, r = array.length; i < array.length; r--, i++) {
-//         array[i] = r;
+//         numbersArrayNew[i] = r;
 //     }
 // };
 // numsReverseArray(numbersArray);
+// console.log(numbersArrayNew);
 // console.log(numbersArray);
