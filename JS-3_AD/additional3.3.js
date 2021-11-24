@@ -101,31 +101,32 @@
 //     }
 // }
 
-// - Дано 2 масиви з рівною кількістю обєктів.                                      ????????????????????????????????????
+// - Дано 2 масиви з рівною кількістю обєктів.
 // Масиви:
-let usersWithId = [
-    {id: 1, name: 'vasya', age: 31, status: false},
-    {id: 2, name: 'petya', age: 30, status: true},
-    {id: 3, name: 'kolya', age: 29, status: true},
-    {id: 4, name: 'olya', age: 28, status: false}
-];
-
-let citiesWithId = [
-    {user_id: 3, country: 'USA', city: 'Portland'},
-    {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
-    {user_id: 2, country: 'Poland', city: 'Krakow'},
-    {user_id: 4, country: 'USA', city: 'Miami'}
-];
-let allInformationAboutUser;
-for (let usersWithIdElement of usersWithId) {
-    for (let citiesWithIdElement of citiesWithId) {
-        if (usersWithId.id === citiesWithIdElement.user_id) {
-            usersWithIdElement.address = citiesWithIdElement;
-        }
-        allInformationAboutUser = usersWithId.concat(citiesWithIdElement);
-        console.log(allInformationAboutUser);
-    }
-}
+// let usersWithId = [
+//     {id: 1, name: 'vasya', age: 31, status: false},
+//     {id: 2, name: 'petya', age: 30, status: true},
+//     {id: 3, name: 'kolya', age: 29, status: true},
+//     {id: 4, name: 'olya', age: 28, status: false}
+// ];
+//
+// let citiesWithId = [
+//     {user_id: 3, country: 'USA', city: 'Portland'},
+//     {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
+//     {user_id: 2, country: 'Poland', city: 'Krakow'},
+//     {user_id: 4, country: 'USA', city: 'Miami'}
+// ];
+//
+// let usersWithCities = [];
+// for (const userWithId of usersWithId) {
+//     for (const cityWithId of citiesWithId) {
+//         if (userWithId.id === cityWithId.user_id) {
+//             userWithId.address = cityWithId;
+//         }
+//     }
+//     usersWithCities.push(userWithId);
+// }
+// console.log(usersWithCities);
 
 // Зєднати в один обєкт користувача та місто з відповідними "id" та "user_id" .
 //     Записати цей обєкт в новий масив
