@@ -166,20 +166,26 @@
 //
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
 // let lettersArray = ['a', 'b', 'c'];
+// let letter = '';
 // for (let i = 0; i < lettersArray.length; i++) {
-//     document.write(`${lettersArray[i]}`);
+//     letter = letter + lettersArray[i];
 // }
+// document.write(letter);
 
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
 // let lettersArray = ['a', 'b', 'c'];
 // i = 0;
+// let letter = '';
 // while (i<lettersArray.length) {
-//     document.write(`${lettersArray[i]}`);
+//     letter = letter + lettersArray[i] ;
 //     i++;
 // }
+// document.write(letter);
 
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
 // let lettersArray = ['a', 'b', 'c'];
+// let str = '';
 // for (const letter of lettersArray) {
-//     document.write(`${letter}`)
+//     str = str + letter;
 // }
+// document.write(str);
