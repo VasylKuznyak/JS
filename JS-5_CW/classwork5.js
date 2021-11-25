@@ -121,10 +121,11 @@
 // let numbersArray = [1, 2, 3];
 // let numbersArrayNew = [];
 // let numsReverseArray = (array) => {
-//     for (let i = 0, r = array.length; i < array.length; r--, i++) {
-//         numbersArrayNew[i] = r;
+//     for (let i = 0, r = array.length-1; i < array.length; r--, i++) {
+//         numbersArrayNew[i] = array[r];
 //     }
+//     return numbersArrayNew;
 // };
-// numsReverseArray(numbersArray);
+// console.log(numsReverseArray(numbersArray));
 // console.log(numbersArrayNew);
-// console.log(numbersArray);
+
