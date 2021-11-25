@@ -63,4 +63,7 @@
 // console.log(firstSymbolUpperCase(str));
 
 // - Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
-
+// let capitalize = (str) => {
+//     return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+// };
+// console.log(capitalize('каждый охотник желает знать'));
