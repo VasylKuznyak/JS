@@ -11,9 +11,8 @@
 let n1 = 'Harry..Potter';
 let n2 = 'Ron---Weasley';
 let n3 = 'Hermione__Granger';
-let nameFixer = (name) => {
-    return name.replace('..', ' ').replace('---', ' ').replace('__', ' ');
-}
+let nameFixer = (name) => name.replace('..', ' ').replace('---', ' ').replace('__', ' ');
+
 console.log(nameFixer(n1));
 console.log(nameFixer(n2));
 console.log(nameFixer(n3));
@@ -71,9 +70,7 @@ let coursesAndDurationArray = [
     {title: 'Frontend', monthDuration: 4}
 ];
 // -- відсортувати його за спаданням за monthDuration
-let sortCoursesArray = (array) => {
-    return array.sort((a, b) => b.monthDuration-a.monthDuration)
-};
+let sortCoursesArray = (array) => array.sort((a, b) => b.monthDuration-a.monthDuration);
 console.log(sortCoursesArray(coursesAndDurationArray));
 
 // -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
