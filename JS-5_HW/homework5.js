@@ -18,7 +18,7 @@
 //         console.log(array[i]);
 //     }
 // };
-// fnArray(array, 10);
+// fnArray(array);
 
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 // let paragraphFn = (text)=> document.write(`<p>${text}</p>`);

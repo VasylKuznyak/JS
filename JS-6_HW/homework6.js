@@ -52,9 +52,7 @@
 //     let str = "HTML JavaScript PHP";
 // document.writeln(insert_dash(str)); // 'HTML-JAVASCRIPT-PHP'
 // let str = "HTML JavaScript PHP";
-// let insertDash = (str) => {
-//     return str.replaceAll(' ', '-').toUpperCase()
-// };
+// let insertDash = (str) => str.replaceAll(' ', '-').toUpperCase();
 // document.write(insertDash(str));
 
 // - Напишіть функцію, яка приймає рядок як аргумент і перетворює регістр першого символу рядка з нижнього регістру у верхній.
@@ -63,7 +61,5 @@
 // console.log(firstSymbolUpperCase(str));
 
 // - Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
-// let capitalize = (str) => {
-//     return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-// };
+// let capitalize = (str) => str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1));
 // console.log(capitalize('каждый охотник желает знать'));
