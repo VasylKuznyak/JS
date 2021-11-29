@@ -33,7 +33,7 @@ console.log(sortedUsers);
 
 // - створити класс для обєктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
 class Client {
-    constructor(id, name, surname, email, phone, [order]) {
+    constructor(id, name, surname, email, phone, order) {
         this.id = id;
         this.name = name;
         this.surname = surname;
