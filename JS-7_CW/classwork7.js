@@ -100,6 +100,7 @@ class prince {
         this.shoe = shoe;
     }
 }
+
 let princeLeonid = new prince('Leonid', 42, 35,);
 
 for (const princess of princesses) {
@@ -109,3 +110,4 @@ for (const princess of princesses) {
 }
 
 console.log(princesses.find(value => value.shoeSize === princeLeonid.shoe));
+
