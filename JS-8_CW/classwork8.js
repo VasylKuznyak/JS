@@ -19,10 +19,14 @@
 // console.log(width50List);
 
 // d) отримує текст який зберігається в елементі з класом listElement2
-function textFn(text) {
-    let elementByClassName = document.getElementsByClassName('listElement2');
-    elementByClassName.innerText = text;
-}
+// function textFn() {
+//     let elementsByClassName = document.getElementsByClassName('listElement2');
+//     for (const elementsByClass of elementsByClassName) {
+//         console.log(elementsByClass.innerText);
+//     }
+// }
+//
+// textFn();
 
 // e) отримує всі елементи li та змінює ім колір фону на сірий
 // let liList = document.getElementsByTagName('li');
@@ -65,8 +69,8 @@ function textFn(text) {
 // }
 
 // k) отримує елемент з класом content_1 та заміняє в ньому тест на довільний. Текст отримати з prompt()
-let textChange = document.getElementsByClassName('content_1');
-textChange.innerText = prompt('enter text');
+// let textChange = document.getElementsByClassName('content_1');
+// textChange[0].innerText = prompt('enter text');
 
 // l) отримати елементи p та змінити їм padding на 20px
 // let pElements = document.getElementsByTagName('p');
@@ -79,3 +83,24 @@ textChange.innerText = prompt('enter text');
 // for (const textElement of textGroup) {
 //     textElement.innerText = 'sep-2021';
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
