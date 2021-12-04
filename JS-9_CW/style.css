@@ -1,0 +1,14 @@
+.red {
+    padding: 10px;
+    border: solid 2.5px red;
+}
+.blue {
+    text-align: center;
+    margin: 5px;
+    border: solid 1.5px dodgerblue;
+}
+.blue_2 {
+    text-align: center;
+    margin: 5px;
+    border: solid 2px midnightblue;
+}
