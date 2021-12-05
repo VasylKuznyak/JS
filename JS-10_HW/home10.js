@@ -15,8 +15,8 @@ button.onclick = function () {
     button.style.display = 'none';
 };
 
-// -  людини та кнопку яка підтверджує дію. При натисканні на кнопку зчитати інформацію
-// з інпуту та перевірити вік чи менше він ніж 18, та повідомити про це користувача.
+// створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати
+// інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
 let ageForm = document.createElement('form');
 ageForm.setAttribute('id', 'firstForm');
 ageForm.style.display = 'flex';
@@ -46,7 +46,6 @@ document.getElementById('firstButton').onclick = function () {
     }
 };
 
-
 // - Создайте меню, которое раскрывается/сворачивается при клике
 let wrap = document.createElement('div');
 wrap.classList.add('menu');
@@ -66,34 +65,32 @@ menuElement.onclick = function () {
     menuElement.classList.toggle('hide');
 };
 
+// - Создать список комментариев, пример объекта коментария - {title : 'lorem', body:'lorem ipsum dolor sit amet'}.
+//Вывести список комментариев в документ, каждый в своем блоке.
+//Добавьте каждому комментарию по кнопке для сворачивания его body.
 
-// - Создать список комментариев , пример объекта коментария - {title : 'lorem', body:'lorem ipsum dolor sit amet'}.
-//     Вывести список комментариев в документ, каждый в своем блоке.
-//     Добавьте каждому комментарию по кнопке для сворачивания его body.
+let fruits = [
+    {title: 'kiwi', color: 'green'},
+    {title: 'lemon', color: 'yellow'},
+    {title: 'tomato', color: 'red'},
+    {title: 'grapefruit', color: 'orange'},
+];
 
-//     let target = document.getElementsByClassName('target')[0];
-// target.ondblclick = function () {
-//     console.log('dblclick');
-// };
-// target.onmousedown = function () {
-//     console.log('onmousedown');
-// };
-// target.onmouseup = function () {
-//     console.log('onmouseup');
-// };
-// target.onmouseover = function () {
-//     console.log('onmouseover');
-// };
-// target.onmouseleave = function () {
-//     console.log('onmouseleave');
-// };
-// target.onmousemove = function (eventObject) {
-//     this.style.backgroundColor = `rgb(${eventObject.clientX},${eventObject.clientY},${eventObject.clientX}`;
-//     console.log(eventObject);
-// };
-// document.onkeypress = function (e) {
-//     console.log(e.key);
-// };
-// document.forms.f1.onsubmit = function (e) {
-//     e.preventDefault()
-// };
+for (let fruit of fruits) {
+    let fruitDiv = document.createElement('div');
+    let fruitDivIn = document.createElement('div');
+    let fruitTitle = document.createElement('h1');
+    let fruitColor = document.createElement('h2');
+    let fruitButton = document.createElement('button')
+    fruitTitle.innerText = fruit.title;
+    fruitColor.innerText = fruit.color;
+    fruitButton.innerText = 'Hide Information about fruit';
+    fruitDivIn.append(fruitTitle, fruitColor);
+    fruitDiv.append(fruitDivIn, fruitButton);
+    document.body.append(fruitDiv);
+    fruitButton.onclick = function () {
+        fruitDivIn.classList.add('close');
+    };
+}
+
+
