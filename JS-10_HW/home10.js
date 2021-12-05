@@ -89,8 +89,6 @@ for (let fruit of fruits) {
     fruitDiv.append(fruitDivIn, fruitButton);
     document.body.append(fruitDiv);
     fruitButton.onclick = function () {
-        fruitDivIn.classList.add('close');
+        fruitDivIn.classList.toggle('close');
     };
 }
-
-
