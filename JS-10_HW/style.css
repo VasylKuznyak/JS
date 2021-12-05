@@ -1,0 +1,8 @@
+#text {
+    width: 400px;
+    height: 400px;
+    background-color: darkorange;
+}
+.hide ul {
+    display: none;
+}

@@ -166,3 +166,4 @@ for (let course of coursesArray) {
     document.body.appendChild(wrap);
     wrap.append(title, duration, modulesDiv);
 }
+
