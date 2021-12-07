@@ -35,63 +35,74 @@
 // - Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вміст ячеєк.
 // При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
-
+// let form = document.createElement("form");
+// form.setAttribute('name', 'createTable');
+// form.classList.add('createTable');
 // const firstInput = document.createElement('input');
-// firstInput.setAttribute('name', 'line');
 // const secondInput = document.createElement('input');
-// secondInput.setAttribute('name', 'amount');
 // const thirdInput = document.createElement('input');
-// thirdInput.setAttribute('name', 'text');
 // let button = document.createElement('button');
 // button.style.height = '15px';
 // button.style.width = '65px';
-// document.body.append(firstInput, secondInput, thirdInput, button);
+// document.body.appendChild(form);
+// form.append(firstInput, secondInput, thirdInput, button);
 //
-// button.addEventListener('click', function () {
-//     let firstValue = firstInput.value;
-//     let secondValue = secondInput.value;
+// let formTable = document.forms['createTable'];
+// formTable.onsubmit = function (objectEvent) {
+//     objectEvent.preventDefault();
+//     let firstValue = +firstInput.value;
+//     let secondValue = +secondInput.value;
 //     let thirdValue = thirdInput.value;
+//     console.log(firstValue, secondValue, thirdValue);
 //
-//     function createTable(first, second, third) {
-//         let table = document.createElement('table');
-//         document.body.appendChild(table);
-//         table.style.border = '1px solid black';
-//         for (let i = 0, j = 0; i < firstValue, j < secondValue; j++, i++) {
-//             let tr = document.createElement('tr');
-//             tr.style.border = '.5px solid red';
+//     let table = document.createElement('table');
+//     table.style.border = '1px solid black';
+//
+//     for (let i = 0; i < firstValue; i++) {
+//         let tr = document.createElement('tr');
+//         for (let j = 0; j < secondValue; j++) {
 //             let td = document.createElement('td');
 //             td.style.border = '.5px solid green';
-//             td.innerText = `${third}`;
-//             table.appendChild(tr);
-//             table.appendChild(tr);
+//             td.innerText = thirdValue;
 //             tr.appendChild(td);
 //         }
+//         table.appendChild(tr);
 //     }
-//
-//     createTable(firstValue, secondValue, thirdValue);
-// });
-
+//     document.body.appendChild(table);
+// }
 
 // - Сворити масив не цензурних слів.
 //     Сворити інпут текстового типу.
 //     Якщо людина вводить слово і воно міститься в масиві не цензурних слів кинути алерт з попередженням.
 //     Перевірку робити при натисканні на кнопку
-let words = ['дурак', 'придурок', 'козел', 'свиня'];
-let textInput = document.createElement('input');
-textInput.setAttribute('type', 'text');
-let button = document.createElement('button');
-document.body.append(textInput, button);
-
-button.addEventListener('click', function () {
-    words.forEach(word => {
-        if (textInput.value === word) {
-            alert('Не цензурне слово')
-        }
-    });
-});
+// let words = ['дурак', 'придурок', 'козел', 'свиня'];
+// let textInput = document.createElement('input');
+// textInput.setAttribute('type', 'text');
+// let wordButton = document.createElement('button');
+// document.body.append(textInput, wordButton);
+//
+// wordButton.addEventListener('click', function () {
+//     words.forEach(word => {
+//         if (textInput.value === word) {
+//             alert('Не цензурне слово')
+//         }
+//     });
+// });
 
 // - Сворити масив не цензурних слів.
 //     Сворити інпут текстового типу.
 //     Потрібно перевіряти чи не містить ціле речення в собі погані слова.
 //     Кинути алерт з попередженням у випадку якщо містить.
 //     Перевірку робити при натисканні на кнопку
+// let textInput2 = document.createElement('input');
+// textInput2.setAttribute('type', 'text');
+// let wordButton2 = document.createElement('button');
+// document.body.append(textInput2, wordButton2);
+//
+// wordButton2.addEventListener('click', function () {
+//     words.forEach(word => {
+//         if (textInput.value.includes(word)) {
+//             alert('Погане слово');
+//         }
+//     });
+// });
