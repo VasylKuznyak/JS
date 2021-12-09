@@ -26,10 +26,10 @@
 // document.body.appendChild(buttonForForms);
 //
 // buttonForForms.addEventListener('click', function () {
-//         console.log(document.forms.first.textOne.value);
-//         console.log(document.forms.first.textTwo.value);
-//         console.log(document.forms.second.textOne.value);
-//         console.log(document.forms.second.textTwo.value);
+//     console.log(document.forms.first.textOne.value);
+//     console.log(document.forms.first.textTwo.value);
+//     console.log(document.forms.second.textOne.value);
+//     console.log(document.forms.second.textTwo.value);
 // });
 
 // - Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вміст ячеєк.
