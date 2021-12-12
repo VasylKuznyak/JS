@@ -9,7 +9,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
                 divPost.classList.add('divPost');
                 let userID = document.createElement('h1');
                 userID.innerText = post.userId;
-                let id = document.createElement('id');
+                let id = document.createElement('h3');
                 id.innerText = post.id;
                 let title = document.createElement('h2');
                 title.innerText = post.title;
@@ -21,12 +21,10 @@ fetch('https://jsonplaceholder.typicode.com/posts')
                 divPostButton.onclick = function () {
                     let comment = document.createElement('div');
                     comment.innerText = post;
-                    console.log(comment);
+                    document.body.appendChild(comment);
                 }
                 divPost.append(userID, id, title, body, divPostButton);
                 document.body.appendChild(divPost);
             }
         );
     });
-
-

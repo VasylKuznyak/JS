@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
 }
+
 .divPost {
     padding: 20px;
 }
+
 .divPost > * {
     padding: 5px;
 }
