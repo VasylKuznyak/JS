@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.divPost {
+    margin: 12px;
+    width: 18%;
+}
+.divComment{
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 40px;
+    border: .5px solid goldenrod;
+    background-color: lightyellow;
+}

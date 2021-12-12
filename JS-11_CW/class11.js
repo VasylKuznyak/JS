@@ -15,10 +15,9 @@ let users = [
 // створити під кожен обєкт свій блок з конопкою "додати до улюблених" при натисканні на яку обєкт
 // потрапляє до масиву favorites улюблених обраних обєктів в локальному сховищі.
 // Створити сторінку favorites.html при переході на яку потрібно вивести в документ всіх обраних на попередньому етапі.
-
 users.forEach(user => {
     let div = document.createElement('div');
-    div.innerText = `${user.name} - ${user.age} = ${user.status}`
+    div.innerText = `${user.name} - ${user.age} = ${user.status}`;
     let button = document.createElement('button');
     button.innerText = 'Додати до улюблених';
     button.onclick = function () {
