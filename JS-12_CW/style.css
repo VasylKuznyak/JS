@@ -3,10 +3,25 @@
     padding: 0;
 }
 
-.divPost {
-    padding: 20px;
+.flex {
+    display: flex;
 }
 
-.divPost > * {
+.left {
+    width: 50%;
+    background-color: lightsteelblue;
+    border-right: .5px solid black;
+}
+.comment {
+    color: darkblue;
+}
+.post, .comment {
+    padding: 20px;
+
+}
+
+.post > *, .comment > * {
     padding: 5px;
 }
+
+
