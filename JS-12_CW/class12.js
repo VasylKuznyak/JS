@@ -31,7 +31,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
                     .then(value => value.json())
                     .then(comment => {
                         comment.forEach(comment => {
-                            if (comment.id === post.id) {
+                            if (comment.postId === post.userId) {
                                 let divComment = document.createElement('div');
                                 divComment.classList.add('comment');
                                 let commentUserID = document.createElement('h1');
