@@ -1,5 +1,6 @@
 let userDetails = JSON.parse(localStorage.getItem('info'));
 let divDetail = document.createElement('div');
+
 divDetail.innerHTML = `
 <p>id: ${userDetails.id}</p>
 <h1>Name: ${userDetails.name}</h1>
@@ -10,8 +11,8 @@ ${userDetails.address.city}</p>
 <h5>Zip Code: ${userDetails.address.zipcode}, Geolocation: ${userDetails.address.geo.lat}, ${userDetails.address.geo.lng}</h5>
 <h5> Phone: ${userDetails.phone}. Website: ${userDetails.website}</h5>
 <h4> Company: ${userDetails.company.name}. Phrase: ${userDetails.company.name}</h4>
-<p>bs: ${userDetails.company.bs}</p>
-`;
+<p>bs: ${userDetails.company.bs}</p>`;
+
 let detailButton = document.createElement('button');
 detailButton.innerText = 'Posts of current user';
 
@@ -27,6 +28,7 @@ detailButton.onclick = function () {
                     detailButton.onclick = function () {
                         usersPosts.classList.toggle('hide');
                     };
+
                     let commentButton = document.createElement('button');
                     commentButton.innerText = 'Go for post details'
                     commentButton.onclick = function () {
