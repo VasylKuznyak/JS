@@ -1,5 +1,6 @@
 let userDetails = JSON.parse(localStorage.getItem('info'));
 let divDetail = document.createElement('div');
+divDetail.classList.add('details')
 
 divDetail.innerHTML = `
 <p>id: ${userDetails.id}</p>
@@ -16,27 +17,34 @@ ${userDetails.address.city}</p>
 let detailButton = document.createElement('button');
 detailButton.innerText = 'Posts of current user';
 
-let usersPosts = document.createElement('ul');
+let usersPosts = document.createElement('wrapper');
+usersPosts.classList.add('wrap');
+
 detailButton.onclick = function () {
     fetch('https://jsonplaceholder.typicode.com/posts')
         .then(value => value.json())
         .then(posts => {
             posts.forEach(post => {
                 if (post.userId === userDetails.id) {
-                    let list = document.createElement('li');
+                    let element = document.createElement('div');
+                    element.classList.add('element');
+                    usersPosts.appendChild(element);
+
+                    let list = document.createElement('div');
                     list.innerText = post.title;
                     detailButton.onclick = function () {
                         usersPosts.classList.toggle('hide');
                     };
 
                     let commentButton = document.createElement('button');
+                    commentButton.classList.add('commentBtn');
                     commentButton.innerText = 'Go for post details'
                     commentButton.onclick = function () {
                         location.href = 'post-details.html';
                         localStorage.setItem('post', JSON.stringify(post));
                     };
 
-                    usersPosts.append(list, commentButton);
+                    element.append(list, commentButton);
                     document.body.appendChild(usersPosts);
                 }
             });
